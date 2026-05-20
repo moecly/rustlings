@@ -10,6 +10,12 @@ fn factorial(num: u64) -> u64 {
     // - additional variables
     // For an extra challenge, don't use:
     // - recursion
+    let mut ret: u64 = 1;
+    for i in 1..=num {
+        ret *= i;
+        println!("{:?}, {:?}", ret, i)
+    }
+    ret
 }
 
 fn main() {
